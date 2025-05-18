@@ -115,6 +115,15 @@ header .navbar{
   color: var(--white-color);
   justify-content: space-between;
 }
+.herosection .herodetails{
+  transform: translateY(-700px);
+  animation: move 1s ease forwards;
+}
+@keyframes move {
+  to{
+    transform: translateY(0);
+  }
+}
 .herosection .herodetails .title{
   font-size: var(--font-size-xxl);
   color: var(--secondary-color);
@@ -162,6 +171,14 @@ header .navbar{
 .herosection .heroimagewrapper{
   max-width: 500px;
   margin-right: 30px;
+  transform: translateX(500px);
+  animation: slide 1s ease forwards;
+}
+@keyframes slide {
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .aboutsection{
   padding: 120px 0;
